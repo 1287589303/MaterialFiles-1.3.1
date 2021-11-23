@@ -89,6 +89,19 @@
       ~ pressed state, etc. Necessary states will be duplicated manually in the adapter
       ~ implementation.
       -->
+
+    <me.zhanghai.android.foregroundcompat.ForegroundImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="@dimen/touch_target_size"
+        android:layout_height="@dimen/touch_target_size"
+        android:layout_marginStart="@dimen/content_start_from_screen_edge_margin_minus_36dp_considering_at_least_8dp"
+        android:layout_marginEnd="@dimen/screen_edge_margin_minus_12dp_at_least_8dp"
+        android:background="@null"
+        android:foreground="@drawable/selectable_item_background_oval"
+        android:padding="@dimen/touch_target_icon_padding"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="@color/color_primary_light" />
+
     <me.zhanghai.android.foregroundcompat.ForegroundImageButton
         android:id="@+id/menuButton"
         android:layout_width="@dimen/touch_target_size"
@@ -100,4 +113,5 @@
         android:foreground="@drawable/selectable_item_background_oval"
         android:src="@drawable/more_vertical_icon_white_24dp"
         app:tint="?colorControlNormal" />
+
 </me.zhanghai.android.files.ui.CheckableForegroundLinearLayout>
